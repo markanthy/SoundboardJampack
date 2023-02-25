@@ -1,0 +1,102 @@
+
+* {
+    box-sizing: border-box;
+    background-size: cover !important;
+}
+
+:root {
+    --background-color: #030303;
+    --secondary-background-color: rgb(43, 47, 49);
+    --text-color: #fff;
+}
+
+body {
+    background: var(--background-color);
+    color: var(--text-color);
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content:  center;
+    text-align: center;
+    height: 100vh;
+    margin: 0;
+}
+
+h1  {
+   color: rgb(40, 169, 255);
+}
+
+#info {
+	margin-bottom: 100px;
+	background: #131515;
+	border-radius: 9px;
+	padding: 0.5rem;
+}
+
+#title {
+position: absolute;
+font-size: 50px;
+top: 40px;
+padding: 40px;
+margin: 40px;  
+}
+
+#buttons {
+    margin: 80px;
+    padding: 80px;
+}
+
+.btn {
+    background-color: rebeccapurple;
+    border-radius: 5px;
+    border: none;
+    color: #fff;
+    margin: 1rem;
+    padding: 1.5rem 3rem;
+    font-size: 1.8rem;
+    font-family: inherit;
+    cursor: pointer;
+    font-weight: bold;
+    text-shadow: 2px 4px 9px #1b1b1b;
+    transition: 400ms ease-in-out;
+   /* min-width: 100px;
+    max-width: 190px;*/
+    width: 190px;
+    box-shadow: 0px 0px 20px #000000;
+}
+
+.btn:hover {
+    opacity: 0.9;
+    font-size: 1.5rem;
+    transition: 300ms ease-in-out;
+    transform: scale(125%);
+}
+
+.btn:focus {
+    outline: none;
+}
+
+.schord1-btn, .schord2-btn, .schord3-btn, .schord4-btn {
+    background-image: url('/img/synth.jpg');
+    background-size: cover;   
+ 
+}
+
+
+.d3bass-btn, .d4bass-btn {
+    background-image: url('/img/bass.jpg');
+    background-size: cover;   
+}
+
+.bellbong-btn, .pingsfx-btn {
+    background-image: url('/img/misc.jpg');
+    background-size: cover;  
+}
+
+/* key press styling */
+.key-pressed {
+    border: 2px solid rgb(231, 231, 231);
+    box-shadow: 0px 0px 8px #f1f1f1;
+    transition: 10ms ease-in-out;
+  }
+  
